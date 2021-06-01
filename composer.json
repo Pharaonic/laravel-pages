@@ -1,0 +1,42 @@
+{
+    "name": "pharaonic/laravel-pages",
+    "description": "Laravel - Pages & Model's Pages",
+    "keywords": [
+        "laravel pages",
+        "php pages",
+        "pages",
+        "laravel",
+        "php"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Moamen Eltouny (Raggi)",
+            "email": "raggi@raggitech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "laravel/framework": ">=8.0",
+        "pharaonic/laravel-sluggable": "*",
+        "pharaonic/laravel-helpers": "*",
+        "pharaonic/laravel-translatable": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pharaonic\\Laravel\\Pages\\": "src"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pharaonic\\Laravel\\Pages\\PagesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -10,5 +10,5 @@ use Pharaonic\Laravel\Pages\Models\Page;
  */
 function page(int $id)
 {
-    return Page::find($id);
+    return Page::translated()->find($id);
 }
